@@ -10,7 +10,7 @@ import codecs
 
 class Lda_Python(object):
     """
-
+    使用LDA进行文本相似度的计算
     """
     def __init__(self):
         """
