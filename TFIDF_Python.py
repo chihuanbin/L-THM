@@ -6,17 +6,12 @@ import chardet
 import jieba
 from nltk import word_tokenize
 
-
-
 class Tfidf_Python(object):
     """
-
+        LDA和TF-IDF改进计算文本相似度方法
     """
 
     def __init__(self):
-        """
-
-        """
         self.seg_list = []
         self.tf_idf_value = None
         self.tf_idf_corpus = None
