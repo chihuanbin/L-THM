@@ -3,7 +3,6 @@ import math
 
 def standard_deviation(sim):
     """计算标准差
-
     :param sim:
     :return:区分度值
     """
@@ -21,23 +20,17 @@ def standard_deviation(sim):
 
 def similarity(lda_sim, tfidf_sim, lam):
     """计算加权相似度
-
     :return:相似度矩阵
     """
     return lam * lda_sim + (1 - lam) * tfidf_sim
 
 
 def lamdba_func(standard1, standard2):
-    """
-
-    :return:
-    """
     return standard1 / (standard1 + standard2)
 
 
 def cos_sim(doc_dis1, doc_dis2):
     """文本相似度计算
-
     :param doc_dis1: 文档1
     :param doc_dis2: 文档2
     :return: 相似度列表
